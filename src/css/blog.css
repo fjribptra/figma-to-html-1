@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
+/* Humberger */
+nav .humberger {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+nav .humberger span {
+    width: 40px;
+    height: 5px;
+    background-color: black;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+/* Humberger end */
+
+/* Navbar */
+
+nav {
+    position: fixed;
+    right: 0;
+    left: 0;
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+}
+
+nav ul{
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+}
+
+nav ul li {
+    list-style: none;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: #FF6464;
+}
+
+/* Navbar end */
+
+/* Blog section */
+section.blog-section {
+    padding: 6rem 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 50px;
+}
+
+section.blog-section .title-container h1 {
+    font-size: 44px;
+}
+
+section.blog-section .cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 50px;
+}
+
+section.blog-section .cards-container .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 15px;
+}
+
+section.blog-section .cards-container .card span {
+    color: #8695A4;
+}
+/* Blog section end */
+
+/* Footer */
+footer {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+footer .logos a {
+    text-decoration: none;
+    color: black;
+}
+
+footer .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+/* Footer end */
+
+/** Media queries */
+@media screen and (max-width: 576px){
+    /* Humberger */
+    nav .humberger {
+        display: flex;
+    }
+    /* Humberger end */
+
+    /* Navbar */
+    nav {
+        /* background-color: salmon; */
+        padding: 1rem 1.5rem;
+        position: fixed;
+        z-index: 2;
+    }
+
+    nav ul {
+        margin-top: 7vh;
+        display: none;
+        padding: 3rem;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: -99;
+    }
+
+    nav ul li {
+        width: 100%;
+        border-bottom: 1px solid black;
+        padding: 10px;
+    }
+    
+    /* Navbar end */
+
+    /* Blog section */
+    section.blog-section {
+        padding: 6rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 50px;
+    }
+}
