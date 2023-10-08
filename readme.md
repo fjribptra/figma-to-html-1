@@ -1,7 +1,7 @@
 
 # Slicing Figma Design To HTML #1
 
-Halo semua, ini adalah project slicing figma design ke html 
+Halo semua, ini adalah project slicing figma design ke html. Project ini dibuat menggunakan HTML, CSS, dan Javascript
 
 ## Authors
 
@@ -23,7 +23,7 @@ HTML, CSS, Javascript
 Clone the project
 
 ```bash
-  git clone https://github.com/Fajrieeeeee/fajrieee-figma-to-html-1.git
+  git clone https://github.com/Fajrieeeeee/figma-to-html-1.git
 ```
 
 
